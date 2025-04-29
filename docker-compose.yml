@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  web:
+    image: humbertovarona/nginx
+    container_name: my-nginx
+    ports:
+      - "8080:80"
+      - "8443:443"
+    environment:
+      TIMEZONE: America/New_York
+      PHP_MEMORY_LIMIT: 512M
+      REDIRECT_TO_HTTPS: yes
+      AUTOCERT: yes
+      CERT_WARN_DAYS: 30
+    volumes:
+      - ./config:/config
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s -L -o /dev/null -w '%{http_code}' http://localhost | grep -qE '200|403|404'"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
