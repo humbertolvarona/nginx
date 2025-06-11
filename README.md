@@ -8,6 +8,8 @@
 ![Build](https://img.shields.io/badge/PHP-8.3-blueviolet)
 ![NGINX](https://img.shields.io/badge/Nginx-modular%20build-yellow)
 
+[![Docker badge](https://img.shields.io/badge/Docker-Ready-3a88fe?style=for-the-badge&logo=docker)](https://hub.docker.com/)
+
 ---
 
 ## 📆 Summary
