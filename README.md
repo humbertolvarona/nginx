@@ -10,6 +10,8 @@
 
 [![Docker badge](https://img.shields.io/badge/Docker-Ready-3a88fe?style=for-the-badge&logo=docker)](https://hub.docker.com/)
 
+![Docker badge](https://img.shields.io/badge/Docker-ready-00c7fc?style=plastic&logo=docker)
+
 ---
 
 ## 📆 Summary
